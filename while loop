@@ -1,0 +1,14 @@
+arr = [1, 0, 0, 0, 0, 0, 0]
+count = 0
+if 0 in arr:
+    i = 0
+    length = 0
+    while i < len(arr):
+        if arr[i] == 0:
+            length += 1
+        if length >= 4:
+            count +=1
+            length =0
+        i += 1
+
+print(count)
